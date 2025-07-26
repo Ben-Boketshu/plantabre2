@@ -6,39 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/style.css">
-    <!-- <script src="/JS/app.js" type="module" defer></script> -->
+    <script src="/JS/app.js" type="module" defer></script>
     <script src="https://kit.fontawesome.com/b93c6351a0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <header class="main-header container-style">
-        <div class="header-style content-style">
-            <span class="logo">Plant’Arbre</span>
-            <nav class="nav-bar">
-                <ul class="nav-list">
-                    <a href="" class="nav-link active">Accueil</a>
-                    <a href="" class="nav-link">Variétés Fruitières</a>
-                    <a href="" class="nav-link">Guide Pratique</a>
-                    <a href="" class="nav-link">Contact</a>
-                </ul>
-            </nav>
-            <div class="burger-icone">
-                <span class="line l1"></span>
-                <span class="line l2"></span>
-                <span class="line l3"></span>
-            </div>
-        </div>
-    </header>
 
     <main>
 
         <section class="container-style section1 ">
-            <div class="content-style sec-presentation">
+
+            <header class="main-header container-style">
+                <div class="header-style content-style">
+                    <span class="logo">Plant’Arbre</span>
+                    <nav class="nav-bar">
+                        <ul class="nav-list">
+                            <a href="" class="nav-link active">Accueil</a>
+                            <a href="" class="nav-link">Variétés Fruitières</a>
+                            <a href="" class="nav-link">Guide Pratique</a>
+                            <a href="" class="nav-link">Contact</a>
+                        </ul>
+                    </nav>
+                    <div class="burger-icone">
+                        <span class="line l1"></span>
+                        <span class="line l2"></span>
+                        <span class="line l3"></span>
+                    </div>
+                </div>
+            </header>
+            <div class="content-style sec-presentation fade-in-section ">
                 <div class="sec1-image">
                     <img src="/IMAGE/photo-sec1-presentation.avif" alt="">
                 </div>
-                <div class="sec1-presentation">
+                <div class="sec1-presentation ">
                     <h3 class="sec1-title">Partagons notre passion pour les vergers durables</h3>
                     <p class="text-presentation">Planter un arbre fruitier, c’est plus qu’un geste pour la nature :
                         c’est investir dans un futur plus vert et savourer des fruits cultivés avec amour. Notre site
@@ -61,7 +62,7 @@
         </section>
 
 
-        <section class="sec-alternative container-style">
+        <section class="sec-alternative container-style fade-in-section ">
 
             <div class="content-style ">
                 <h3>Obtenez gratuitement</h3>
@@ -88,13 +89,13 @@
 
 
 
-        <section class="section3 container-style fade-in-section visible visible">
+        <section class="section3 container-style fade-in-section">
             <div class="content-style">
                 <h3 class="title-sec">Et si un arbre changeait tout ?</h3>
                 <div class="sec3_presentation ">
                     <div class="bloc_video">
                         <!-- <video src="/IMAGE/vidéo_nature.mp4" muted autoplay loop></video> -->
-                         <img src="/IMAGE/men-planting.avif" alt="">
+                        <img src="/IMAGE/men-planting.avif" alt="">
                     </div>
                     <div class="bloc_text">
                         <h3> L’homme qui a ralenti le désert</h3>
@@ -121,7 +122,7 @@
         </section>
 
 
-        <section class="section4 container-style fade-in-section visible">
+        <section class="section4 container-style fade-in-section ">
             <div class="content-style">
                 <h3 class="title-sec">Nos variétés phares </h3>
                 <div class="arrow">
@@ -188,11 +189,11 @@
             </div>
         </section>
 
-        <section class="section5 container-style">
+        <section class="section5 container-style fade-in-section ">
             <div class="content-style">
                 <h3 class="title-sec">Guide pratique</h3>
                 <div class="all-sec5-blocs">
-                    <div class="sec5-bloc">
+                    <div class="sec5-bloc fade-in-section ">
                         <div class="sec5-image">
                             <img src="/IMAGE/step1.avif" alt="">
                         </div>
@@ -205,7 +206,7 @@
                         </div>
                     </div>
 
-                    <div class="sec5-bloc">
+                    <div class="sec5-bloc fade-in-section ">
                         <div class="sec5_text">
                             <p><span class="Number">2</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Quis iure cupiditate soluta
@@ -218,7 +219,7 @@
                         </div>
                     </div>
 
-                    <div class="sec5-bloc">
+                    <div class="sec5-bloc fade-in-section ">
                         <div class="sec5-image">
                             <img src="/IMAGE/step3.avif" alt="">
                         </div>
@@ -231,7 +232,7 @@
                         </div>
                     </div>
 
-                    <div class="sec5-bloc">
+                    <div class="sec5-bloc fade-in-section ">
                         <div class="sec5_text">
                             <p><span class="Number">4</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Quis iure cupiditate soluta
@@ -249,15 +250,40 @@
             </div>
         </section>
 
-        <section class="avis-utilisitaeur container-style">
 
+        <section class="container-style avis-section fade-in-section">
+            <div class="content-style">
+                <h3>Entrez votre adresse email et donner nous votre avis</h2>
+                    <p>Merci de renseigner votre email et votre avis ci-dessous :</p>
+
+                    <form id="form-avis" action="traitement_avis.php" method="POST">
+                        <label for="email">Votre email :</label><br>
+                        <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required><br><br>
+
+                        <label for="avis">Votre avis :</label><br>
+                        <textarea id="avis" name="avis" rows="5" placeholder="Écrivez votre avis ici..."
+                            required></textarea><br><br>
+
+                        <button type="submit" class="btn-link">Envoyer</button>
+                    </form>
+            </div>
         </section>
-
 
     </main>
 
+    <footer class="main-footer container-style">
+        <div class="content-style footer-content">
+            <div class="footer-logo">Plant’Arbre</div>
+            <nav class="footer-nav">
+                <a href="#" class="footer-link">Accueil</a>
+                <a href="#" class="footer-link">Variétés Fruitières</a>
+                <a href="#" class="footer-link">Guide Pratique</a>
+                <a href="#" class="footer-link">Contact</a>
+            </nav>
+            <p class="footer-copy">© 2025 Plant’Arbre. Tous droits réservés.</p>
+        </div>
+    </footer>
 
-    <footer></footer>
 </body>
 
 </html>
