@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/CSS/style.css">
-    <script src="/JS/app.js" type="module" defer></script>
+    <link rel="stylesheet" href="CSS/style.css?v=1.0">
+    <script src="JS/app.js" type="module" defer></script>
     <script src="https://kit.fontawesome.com/b93c6351a0.js" crossorigin="anonymous"></script>
 </head>
 
@@ -23,7 +23,7 @@
                     <nav class="nav-bar">
                         <ul class="nav-list">
                             <a href="" class="nav-link active">Accueil</a>
-                            <a href="" class="nav-link">Variétés Fruitières</a>
+                            <a href="pages_varietes.php" class="nav-link">Variétés Fruitières</a>
                             <a href="" class="nav-link">Guide Pratique</a>
                             <a href="" class="nav-link">Contact</a>
                         </ul>
@@ -37,7 +37,7 @@
             </header>
             <div class="content-style sec-presentation fade-in-section ">
                 <div class="sec1-image">
-                    <img src="/IMAGE/photo-sec1-presentation.avif" alt="">
+                    <img src="IMAGE/photo-sec1-presentation.avif" alt="">
                 </div>
                 <div class="sec1-presentation ">
                     <h3 class="sec1-title">Partagons notre passion pour les vergers durables</h3>
@@ -94,8 +94,8 @@
                 <h3 class="title-sec">Et si un arbre changeait tout ?</h3>
                 <div class="sec3_presentation ">
                     <div class="bloc_video">
-                        <!-- <video src="/IMAGE/vidéo_nature.mp4" muted autoplay loop></video> -->
-                        <img src="/IMAGE/men-planting.avif" alt="">
+                        <!-- <video src="IMAGE/vidéo_nature.mp4" muted autoplay loop></video> -->
+                        <img src="IMAGE/men-planting.avif" alt="">
                     </div>
                     <div class="bloc_text">
                         <h3> L’homme qui a ralenti le désert</h3>
@@ -133,7 +133,7 @@
 
                     <article class="tree-article">
                         <div class="img-tree">
-                            <img src="/IMAGE/marek-studzinski-3D6yReT06p0-unsplash.jpg" alt="">
+                            <img src="IMAGE/peche.jpg" alt="">
                         </div>
                         <div class="description-tree">
                             <h3>Le pommier </h3>
@@ -146,7 +146,7 @@
                     </article>
                     <article class="tree-article">
                         <div class="img-tree">
-                            <img src="/IMAGE/ian-baldwin-f7FwHomDgzg-unsplash.jpg" alt="">
+                            <img src="IMAGE/pomme.jpg" alt="">
                         </div>
                         <div class="description-tree">
                             <h3>Le pêcher </h3>
@@ -160,7 +160,7 @@
 
                     <article class="tree-article">
                         <div class="img-tree">
-                            <img src="/IMAGE/roma-kaiuk-jGbzxJzvTpE-unsplash.jpg" alt="">
+                            <img src="IMAGE/cerise.jpg" alt="">
                         </div>
                         <div class="description-tree">
                             <h3>Le cerisier </h3>
@@ -174,7 +174,7 @@
 
                     <article class="tree-article">
                         <div class="img-tree">
-                            <img src="/IMAGE/avocat.avif" alt="">
+                            <img src="IMAGE/avocat.avif" alt="">
                         </div>
                         <div class="description-tree">
                             <h3>L'avocatier </h3>
@@ -195,7 +195,7 @@
                 <div class="all-sec5-blocs">
                     <div class="sec5-bloc fade-in-section ">
                         <div class="sec5-image">
-                            <img src="/IMAGE/step1.avif" alt="">
+                            <img src="IMAGE/step1.avif" alt="">
                         </div>
                         <div class="sec5_text">
                             <p><span class="Number">1</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -215,13 +215,13 @@
                                 consectetur adipisicing elit. Minus impedit, exercitationem aut .</p>
                         </div>
                         <div class="sec5-image">
-                            <img src="/IMAGE/step2.avif" alt="">
+                            <img src="IMAGE/step2.avif" alt="">
                         </div>
                     </div>
 
                     <div class="sec5-bloc fade-in-section ">
                         <div class="sec5-image">
-                            <img src="/IMAGE/step3.avif" alt="">
+                            <img src="IMAGE/step3.avif" alt="">
                         </div>
                         <div class="sec5_text">
                             <p><span class="Number">3</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -241,7 +241,7 @@
                                 consectetur adipisicing elit. Minus impedit, exercitationem aut .</p>
                         </div>
                         <div class="sec5-image">
-                            <img src="/IMAGE/step4.avif" alt="">
+                            <img src="IMAGE/step4.avif" alt="">
                         </div>
                     </div>
 
@@ -266,6 +266,10 @@
 
                         <button type="submit" class="btn-link">Envoyer</button>
                     </form>
+                    <div id="modal-success">
+                        Merci, votre avis a bien été reçu !
+                        <button id="close-modal" class="btn-link active">Fermer</button>
+                    </div>
             </div>
         </section>
 
